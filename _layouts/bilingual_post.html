@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<article class="post h-entry bilingual-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header bilingual-post-header">
+    <div>
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.categories and page.categories.size > 0 -%}
+          <span> · {{ page.categories | join: ", " }}</span>
+        {%- endif -%}
+      </p>
+    </div>
+
+    <button class="language-toggle" type="button" aria-label="Switch language" aria-pressed="false">
+      中 / EN
+    </button>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+
+<script>
+  (function () {
+    var post = document.currentScript.previousElementSibling;
+    var button = post.querySelector(".language-toggle");
+    var english = post.querySelectorAll('[data-lang="en"]');
+    var chinese = post.querySelectorAll('[data-lang="zh"]');
+    var currentLanguage = "en";
+
+    function setLanguage(language) {
+      currentLanguage = language;
+      english.forEach(function (section) {
+        section.hidden = language !== "en";
+      });
+      chinese.forEach(function (section) {
+        section.hidden = language !== "zh";
+      });
+      button.setAttribute("aria-pressed", String(language === "zh"));
+      button.textContent = language === "en" ? "中 / EN" : "EN / 中";
+    }
+
+    button.addEventListener("click", function () {
+      setLanguage(currentLanguage === "en" ? "zh" : "en");
+    });
+
+    setLanguage("en");
+  })();
+</script>

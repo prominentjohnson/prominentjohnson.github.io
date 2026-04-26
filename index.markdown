@@ -18,12 +18,12 @@ permalink: /
     <div class="name-block">
       <h2 class="name-en">Zhuocheng Zhang</h2>
       <div class="name-zh" style="font-size:1.5rem;">
-        倬诚 <span class="ipa" style="font-size:1.2rem;">/ʈʂwɔ˥ ʈʂʰə̌ŋ/</span> ·
-        章 <span class="ipa" style="font-size:1.2rem;">/ʈʂaŋ˥/</span>
+        倬诚 <span class="ipa" style="font-size:1.2rem;">Draw Chain</span> ·
+        章 <span class="ipa" style="font-size:1.2rem;">John</span>
       </div>
     </div>
     <p>
-      I am a researcher at the Technical University of Munich (TUM), working in the field of robotics and control, co-supervised by <a href="https://www.professoren.tum.de/en/alanwar-amr" target="_blank" rel="noopener noreferrer"> Prof. Amr Alanwar</a> and  <a href="https://www.professoren.tum.de/en/khadiv-majid" target="_blank" rel="noopener noreferrer"> Prof. Majid Khadiv</a>. My research interests include optimization-based planning, learning-based control, and safety-critical systems.
+      I am a researcher at the Technical University of Munich (TUM), working in the field of robotics and safety, co-supervised by <a href="https://www.professoren.tum.de/en/alanwar-amr" target="_blank" rel="noopener noreferrer"> Prof. Amr Alanwar</a> and  <a href="https://www.professoren.tum.de/en/khadiv-majid" target="_blank" rel="noopener noreferrer"> Prof. Majid Khadiv</a>. My research interests include optimization-based planning, learning-based control, and safety-critical systems.
       <br><br>
       I obtained my M.Sc. degree in Mechatronics and Robotics from TUM. Prior to that, I received my B.Eng. degree in Mechanical Engineering from Nanjing University of Aeronautics and Astronautics(NUAA).
     </p>

@@ -1,0 +1,103 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.social-media-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.social-media-icons li {
+  margin: 0;
+}
+
+.social-media-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: #828282;
+}
+
+.social-media-icons a:hover,
+.social-media-icons a:focus {
+  color: #111;
+}
+
+.social-media-icons .svg-icon {
+  width: 22px;
+  height: 22px;
+  padding-right: 0;
+  fill: currentColor;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.posts-index {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.post-list-item {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 1.2rem;
+}
+
+.post-list-item:last-child {
+  border-bottom: 0;
+}
+
+.post-list-item h3 {
+  margin-bottom: 0.25rem;
+}
+
+.bilingual-post-header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.language-toggle {
+  flex: 0 0 auto;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  background: #fff;
+  color: #424242;
+  padding: 0.35rem 0.55rem;
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.language-toggle:hover,
+.language-toggle:focus {
+  border-color: #828282;
+  color: #111;
+}
+
+@media screen and (max-width: 600px) {
+  .bilingual-post-header {
+    align-items: flex-start;
+  }
+
+  .language-toggle {
+    margin-top: 0.2rem;
+  }
+}
