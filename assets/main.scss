@@ -4,15 +4,37 @@
 
 @import "minima";
 
+.site-footer .footer-col-wrapper {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.25fr) auto minmax(280px, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin-left: 0;
+}
+
+.site-footer .footer-col {
+  float: none;
+  width: auto;
+  padding-left: 0;
+}
+
+.site-footer .footer-col-3 {
+  text-align: right;
+}
+
 .social-media-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .social-media-icons li {
+  display: inline-flex;
   margin: 0;
+  padding-top: 0 !important;
 }
 
 .social-media-icons a {
@@ -32,8 +54,28 @@
 .social-media-icons .svg-icon {
   width: 22px;
   height: 22px;
+  display: block;
   padding-right: 0;
+  vertical-align: middle;
   fill: currentColor;
+}
+
+.scholar-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+  fill: currentColor;
+}
+
+.scholar-icon path {
+  fill: #fff;
+}
+
+.scholar-icon path:last-child {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-width: 1.4;
 }
 
 .sr-only {
@@ -93,6 +135,15 @@
 }
 
 @media screen and (max-width: 600px) {
+  .site-footer .footer-col-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .site-footer .footer-col-3 {
+    text-align: left;
+  }
+
   .bilingual-post-header {
     align-items: flex-start;
   }

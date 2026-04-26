@@ -27,6 +27,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: z82751
 github_username:  prominentjohnson
 linkedin_username: zhuocheng-zhang-b74256273
+instagram_username: zhuocheng.z
+google_scholar_url: https://scholar.google.com/citations?hl=en&user=bL8-jkUAAAAJ
 header_pages:
   - index.markdown
   - posts.markdown
